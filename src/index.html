@@ -7,8 +7,35 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="../node_modules/jquery/dist/jquery.min.js></script>
+  <script src="../node_modules/semantic-ui-css/semantic.min.js"></script>
+ 
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="ui active inverted dimmer">
+       <div class="ui text loader large">
+         Lade <em>Angular App</em> ... 
+       </div>
+    </div>
+
+  
+  </app-root>
+  <div>
+      The following is a test installed via <code>index.html</code>:
+
+      <ul>
+        <li>
+          <button class="ui facebook button">
+            <i class="facebook icon"></i>
+            Facebook
+          </button>
+        </li>
+        <li>
+          If you see above a <em>Facebook</em> button, means: <strong>Semantic UI works!</strong>
+        </li>
+      </ul>
+  </div>
 </body>
 </html>

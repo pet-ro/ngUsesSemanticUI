@@ -1,22 +1,24 @@
 import { Injectable } from '@angular/core';
-/* 
+
 // uses HTTP request
 import { HttpClient } from '@angular/common/http';
-*/
+import { Observable } from 'rxjs';
+import { retry, map, catchError} from 'rxjs/operators';
 
 // uses Model related stuff
 import { ProductBook, Thumbnail } from '../model/type/product-book';
+import { ProductBookFactory } from './product-book-factory';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductProviderService {
-/*
+
 
   private api = 'https://book-monkey2-api.angular-buch.com';
   public  products: ProductBook[];
 
-  constructor() { 
+  constructor(private httpClient: HttpClient) { 
   }
 
   
@@ -24,12 +26,26 @@ export class ProductProviderService {
       return Observable.throw(error);
     }
  
-  getAll(): Observable<Array<ProductBook>> {
-    return this.http.get(`${this.api}/books`).
+  getAll(): Observable<ProductBook[]> {
+    return this.httpClient.get<ProductBook[]>(`${this.api}/books/$(key)`)
+      .pipe(
+        retry(3),
+        map( rawBooks => rawBooks
+          .map( rawBook => ProductBookFactory.fromObject(rawBook)) 
+        ),
+        catchError(this.errorHandler)
+      )
   }
 
 
-  getSingle()
+  getSingle(key: string): Observable<ProductBook> {
+    return this.httpClient.get<ProductBook>(`${this.api}/books/$(key)`)
+       .pipe(
+          retry(3),
+          map(rawBook => ProductBookFactory.fromObject(rawBook)),
+          catchError(this.errorHandler)
+       )
+  }
 
   getAllStaticData(): ProductBook[] {
     return  [
@@ -48,5 +64,5 @@ export class ProductProviderService {
       )
     ];
   }
-  */
+  
 }

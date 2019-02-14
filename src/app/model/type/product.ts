@@ -1,14 +1,9 @@
 
-// declare interface to write Object Literal Notation typesafe
-export interface Product { 
-     key: string,
-     title: string,
-}
+export class Product { 
 
-// declare class related to the above interface
-export var Product: { 
-    //  constructor function object.
-    new(key: string,
-        title: string,  
-    ): Product
+    constructor( 
+       public key: string,
+       public title: string,
+    ){ }
+
 }

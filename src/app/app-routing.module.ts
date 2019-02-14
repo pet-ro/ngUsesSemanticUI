@@ -8,7 +8,8 @@ import { ProductDetailsComponent } from './component/product-view/product-detail
 const routes: Routes = [
    { path: '', redirectTo: 'home', pathMatch: 'full'},
    { path: 'home', component: HomeComponent},
-   { path: 'products', component: ProductListComponent},
+   { path: 'product-page', redirectTo: 'product', pathMatch: 'full' },
+   { path: 'product',      component: ProductListComponent},
    { path: 'product/:key', component: ProductDetailsComponent}
 ];
 

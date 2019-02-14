@@ -5,11 +5,11 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<div class="ui buttons">
-  <button class="ui button">One</button>
-  <button class="ui button">Two</button>
-  <button class="ui button">Three</button>
-</div>
+<div class="ui two item tabs menu">
+    <a routerLink="home"  routerLinkActive="active" class="item">Home</a>
+    <a routerLink="product-page" routerLinkActive="active" class="item">Product Liste</a>
+  </div>
+
 <router-outlet></router-outlet>
 
 <!--

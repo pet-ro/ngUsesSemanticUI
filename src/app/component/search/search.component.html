@@ -1,0 +1,21 @@
+// SearchComponent
+// use     https://semantic-ui.com/modules/search
+// 
+// Configuration of the SemanticUI Search
+//  - Standard plus icon "Search"
+//             plus state "loading"
+//             plus variation "fluid"
+
+
+// To set the state "loading":
+//    The template switches the CSS class `loading` to the style classes,
+//    based on the boolean value of the component property `isLoading`.  
+<div class="ui fluid search"  ngClass="{ loading: isLoading}">
+    <div class="ui icon input">
+      <input class="prompt" type="text" placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+    <div class="results"></div>
+  </div>
+
+  

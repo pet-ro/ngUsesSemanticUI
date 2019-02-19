@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router'
 
 // Model related
-import { ProductBookProviderService } from '../../../service/product-book-provider-service'
+import { ProductBookProviderService } from '../../../service/product/product-book-provider-service'
 import { ProductBook } from 'src/app/model/type/product-book';
 
 @Component({

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProductBook, Thumbnail } from '../../../model/type/product-book'
-import { ProductBookProviderService} from '../../../service/product-book-provider-service';
-import { ProductBookFactory } from 'src/app/service/product-book-factory';
+import { ProductBookProviderService} from '../../../service/product/product-book-provider-service';
+import { ProductBookFactory } from 'src/app/service/product/product-book-factory';
 
 @Component({
   selector: 'bm-product-list',

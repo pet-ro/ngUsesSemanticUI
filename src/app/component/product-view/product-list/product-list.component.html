@@ -1,9 +1,11 @@
 
-<div class="ui three item menu">
-    <a class="item">Home</a>
-    <a class="active item">Product List</a>
-    <a class="item">Product Details</a>
+
+<div class="ui three item tabs menu">
+  <a class="item">Product: Books</a>
+  <a routerLink="/product" routerLinkActive="active" class="item">Product Liste</a>
+  <a routerLink="/product/:key" routerLinkActive="active" class="item">Product Details</a>
 </div>
+ 
   
 <div class="ui middle aligned selection divided list">
   <a *ngFor="let product of products" class="item">

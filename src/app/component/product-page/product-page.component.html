@@ -1,5 +1,22 @@
+<!--
+  see src/app-routing.module.ts
+
+  We skip this page:
+
+   { path: 'product-page', redirectTo: 'product', pathMatch: 'full' },
+   { path: 'product',      component: ProductListComponent},
+
+-->
+
+<!--
+
+
 <p>
-  product-page works!
+  product-page works! But is skipped by app-routing!
 </p>
+
 <bm-product-list></bm-product-list>
 <bm-product-details></bm-product-details>
+-->
+
+<router-outlet></router-outlet>

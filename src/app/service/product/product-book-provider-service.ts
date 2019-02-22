@@ -11,6 +11,10 @@ import { ProductBookFactory } from './product-book-factory';
 
 
 const API4AngularBuch : string   = 'https://book-monkey2-api.angular-buch.com';
+
+// After `npm start `
+// or 
+// Use `JSON Server` git stag
 const API4LocalHost3000 : string = 'http://localhost:3000';
 
 

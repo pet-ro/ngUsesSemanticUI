@@ -1,0 +1,5 @@
+    {
+      "/book":               "/books",
+      "/book/:key":          "/books/:id",
+      "/books/search/:term": "/books?q=:term",
+    }

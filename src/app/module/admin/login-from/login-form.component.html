@@ -1,0 +1,19 @@
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" >  
+  <label>User name: </label>
+  <input type="text" name="username" ngModel>
+
+  <label>Passwort:</label>
+
+  <input type="password" 
+      required minlength="8"
+      pattern=".*\d*"
+      name="password" 
+      ngModel
+      #password="ngModel">
+
+  <p *ngIf="password.invalid">
+    The password requires at least 8 characters and at least one is a number. 
+  </p>   
+      
+  <button type="submit">send login data</button>
+</form>

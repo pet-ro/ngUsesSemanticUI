@@ -1,0 +1,112 @@
+<!--
+
+  Template-driven form  to edit the data to a ProductBook object.
+  ====================
+-->
+
+<p>
+  admin-produkt-book works!
+</p>
+
+<h1>Admin ProductBook</h1>
+
+The following forms add a new book entry.
+
+
+<form class="ui large form"
+  #ProductBookForm="ngForm"
+  (ngSubmit)="submitForm()">
+
+  <div class="field">
+    <label>Book title</label>
+    <input 
+       name="title"
+       [(ngModel)]="productBook.title"
+       required>
+
+    <!--
+      
+    -->
+    <div *ngIf="errors.title"  class="ui negative message">
+      {{ errors.title }}
+    </div>   
+  </div>
+
+  <div class="field">
+    <label>Book subtitle</label>
+    <input 
+       name="subtitle"
+       [(ngModel)]="productBook.subtitle">
+  </div>
+
+  
+  <div class="field">
+    <label>ISBN</label>
+    <input 
+       name="key"
+       [(ngModel)]="productBook.key"
+       required
+       minlength="10"
+       maxlength="13">
+    <div *ngIf="errors.key"  class="ui negative message">
+      {{ errors.key }}
+    </div>   
+  </div>
+
+  <div class="field">
+    <label>Publishing date</label>
+    <input 
+       tyoe="date"
+       name="published"
+       [(ngModel)]="productBook.published"
+       useValueAsDate
+       required>
+    <div *ngIf="errors.published"  class="ui negative message">
+      {{ errors.published }}
+    </div>   
+  </div>
+
+  <div class="field">
+    <label>Author</label>
+    <input 
+       name="authors"
+       [(ngModel)]="productBook.authors[0]"
+       required>
+    <div *ngIf="errors.authors"  class="ui negative message">
+      {{ errors.authors }}
+    </div>   
+  </div>
+
+  <div class="field">
+    <label>Description</label>
+    <textarea
+       name="description"   
+       [[ngModel]]="productBook.description"
+       rows="3">
+    </textarea>
+  </div>
+
+  <div class="field">
+    <label>Thumbnails</label>
+    <div class="two fields"  ngModelGroup="thumbmail">
+      <div class="field">
+        <input 
+        name="url"
+        [(ngModel)]="productBook.thumbnails[0].url"
+        placeholder="http://example.org/img.jpg">
+      </div>
+      <div class="field">
+        <input 
+        name="title"
+        [(ngModel)]="productBook.thumbnails[0].title"
+        placeholder="Titel">
+      </div>
+    </div>
+
+    <button type="submit" class="ui button"
+      [disabled]="myForm.invalid">Save</button>
+      
+  </div>
+
+
+</form>

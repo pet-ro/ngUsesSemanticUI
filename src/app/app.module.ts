@@ -4,16 +4,23 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule  } from '@angular/common/http'; 
 //  App uses Routing
 import { AppRoutingModule } from './app-routing.module';
-// App uses template-driven forms
-import { FormsModule } from '@angular/forms'
 
+// Use either FormsModule or ReactiveFormsModule
+//
+// App uses template-driven forms
+// import { FormsModule } from '@angular/forms'
+// App uses reactive forms
+import { ReactiveFormsModule } from '@angular/forms'
+// end of "either FormsModule or ReactiveFormsModule"
+
+//  -----------------------------------------   
 // THE APP
 import { AppComponent } from './app.component';
-
+// 
 //      Home
 //      Home is a kind of main menu
 import { HomeComponent } from './component/home/home.component';
-
+// 
 //      Product page 
 import { ProductPageComponent } from './component/product-page/product-page.component';
 import { ProductProviderService } from './service/product/product-provider.service';
@@ -22,24 +29,19 @@ import { ProductDetailsComponent } from './component/product-view/product-detail
 
 // Reactive Programming
 import { from } from 'rxjs';
-import { PublisherComponent } from './demo/rx/publish-subscribe/publisher/publisher.component';
-import { SubscriberComponent } from './demo/rx/publish-subscribe/subscriber/subscriber.component';
 import { SearchComponent } from './component/search/search.component';
-
-// Edit book entry
-import { AdminPageComponent } from './component/admin-page/admin-page.component';
-import { AdminProductBookComponent } from './component/admin-view/admin-product-book/admin-product-book.component';
-import { LoginFormComponent } from './component/admin-view/login-form/login-form.component';
-import { RegisterFormComponent } from './component/admin-view/register-form/register-form.component';
+// import { DemoModule } from './demo/demo.module'
+ 
+// Admin Module
+import { AdminPageComponent } from './module/admin/admin-page.component';
+// Admin Module 
+import { AdminModule } from './module/admin/admin.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // app-related
-    AdminPageComponent,
-    AdminProductBookComponent,
     // app-related
     HomeComponent,
     // app-related
@@ -48,17 +50,13 @@ import { RegisterFormComponent } from './component/admin-view/register-form/regi
     ProductDetailsComponent,
     // app-related
     SearchComponent,
-    // demo 
-    PublisherComponent,
-    SubscriberComponent,
-    LoginFormComponent,
-    RegisterFormComponent,
   ],
   imports: [
     BrowserModule, 
     HttpClientModule, // Note: HttpClientModule requires load after BrowserModul 
     AppRoutingModule,
-    FormsModule,
+    // 
+    AdminModule, 
 
   ],
   providers: [

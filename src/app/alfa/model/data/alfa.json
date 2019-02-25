@@ -1,0 +1,205 @@
+{
+    "designs": [
+        {
+          "id": "alfa-1001",
+          "title": "Design Hemd, Trachten",
+          "shortDescriptions": [
+            "100% feinste Baumwolle",
+            "Trachtenknöpfe aus echtem Hirschhorn",
+            "gezeigte Kragenform: Button-down Berlin"
+          ],
+          "InStock":  3,
+          "featured": true,
+          "descriptions": [
+            "Dieses karierte Trachten-Dessin mit langem Arm.", 
+            "Button-Down-Kragen und original Hirschhornknöpfen.", 
+            "Das Hemd punktet mit seinem edlen und gleichermaßen lässigen Look."
+           ],
+          "price":  119.90,
+          "thumbnails": [
+            {
+              "url": "https://shop.muellermassmanufaktur.de/artikel/masshemd-3163-17,1318.html",
+              "title": "Hemd, grob kariert"
+            }
+          ],
+        },
+         
+        {
+          "id": "alfa-1002",
+          "title": "Design Hemd, TrachtenSommerdesign",
+          "shortDescriptions": [
+            "Reines Leinen, atmungsakitiv",
+            "Trachtenknöpfe aus echtem Hirschhorn",
+            "gezeigte Kragenform: Napoli"
+          ],
+          "InStock":  5,
+          "featured": false,
+          "descriptions": [
+            "Hemden aus diesem wunderschönen Stoff mit einer besonders „soften“ Einlage in Kragen und Manschette.", 
+            "Napoli Kragen und original Hirschhornknöpfen.", 
+            "Das Hemd punktet mit seiner lässigen Optik."
+           ],
+          "price":  129.90,
+          "thumbnails": [
+            {
+              "url": "https://shop.muellermassmanufaktur.de/images/artikel/4415_1.png",
+              "title": "Hemd, Leinengewebe"
+            }
+          ],
+        },
+         
+        {
+          "id": "alfa-1003",
+          "title": "Design Hemd, TrachtenSommerdesign",
+          "shortDescriptions": [
+            "zweifarbig gewebter Feintwil",
+            "Trachtenknöpfe aus echtem Hirschhorn",
+            "gezeigte Kragenform: Hampton"
+          ],
+          "InStock":  5,
+          "featured": false,
+          "descriptions": [
+            "hochwertigen Baumwollstoff aus Italien. ", 
+            "Ein zweifarbig gewebter Feintwill mit leichtem, fließendem Fall. ", 
+            "Dieser sogenannte „Faux Unis“, ist so klein gemustert, dass er auf den ersten Blick einfarbig (uni) wirkt."
+           ],
+          "price":  139.90,
+          "thumbnails": [
+            {
+              "url": "https://shop.muellermassmanufaktur.de/images/artikel/thumb3/4871_1.jpg",
+              "title": "Hemd, hochwertiger Baumwollstoff"
+            }
+          ],
+        },
+      ],
+      "services": [
+        {
+          "id": "mm001",
+          "title": "Mass Tage",
+          "shortDescriptions": [
+            "12 mal im Jahr",
+            "bundesweit",
+            "Hamburg, Berlin, Frankfurt, München"
+          ],
+          "featured": true,
+          "descriptions": [
+            "In den bundesweiten Großräumen bieten wir immer wieder Masstage an.", 
+            "Individuales Massnehmen.", 
+            "Die Stoffe und ihre Qualität erfühlen."
+           ],
+          "thumbnails": [
+            {
+              "url": "https://www.muellermassmanufaktur.de/images/masstage/thumb3/4_1.jpg",
+              "title": "Hemden mit Qualität zum Fühlen"
+            }
+          ],
+        },
+         
+        {
+          "id": "mm002",
+          "title": "Pflegehinweise ",
+          "shortDescriptions": [
+            "für Designs aus weißer oder heller Baumwolle",
+            "für Designs aus dunkler oder farbintensiver Baumwolle",
+            "für Designs aus Baumwollmischgeweben, Mikrofaser und Viskosemischungen",
+            "für Designs aus Seide, mit Kaschmir- oder Wollanteil"
+          ],
+          "featured": true,
+          "descriptions": [
+            "Die Wahl des richtigen Waschmittels für die jeweilige Gewebeart ist ganz entscheidend.",
+             "Denn Waschmittel sind nicht alle gleich.", 
+             "Es gibt Weißmacher, Farbschützer, Wollspezialisten, etc.",
+             "Für jede Waschaufgabe gibt es die optimalen Wirkstoffe.", 
+             "Falsch eingesetzt schaden allerdings alle Waschmittel mehr als dass sie nützen.",
+             "Pulver, die strahlend weiß waschen, lassen zum Beispiel dunkle Hemden blass aussehen.", 
+           ],
+          "thumbnails": [
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_40deg.png",
+              "title": "40 Grad"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_60deg.png",
+              "title": "60 Grad"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_iron1.png",
+              "title": "Bügeln, Stufe 1"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_iron2.png",
+              "title": "Bügeln, Stufe 2"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_iron3.png",
+              "title": "Bügeln, Stufe 3"
+            },
+          ],
+        }
+      ],
+
+      "news": [
+        {
+          "id": "news001",
+          "title": "Pflegehinweise",
+          "shortDescriptions": [
+            "für Designs aus weißer oder heller Baumwolle",
+            "aus dunkler oder farbintensiver Baumwolle",
+            "aus Baumwollmischgeweben, Mikrofaser und Viskosemischungen",
+            "aus Seide, mit Kaschmir- oder Wollanteil"
+          ],
+          "featured": true,
+          "descriptions": [
+            "Die Wahl des richtigen Waschmittels für die jeweilige Gewebeart ist ganz entscheidend.", 
+           ],
+          "links": [
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/",
+              "title": "Pflegehinweise"
+            }
+          ],
+        },
+         
+        {
+          "id": "mm002",
+          "title": "Pflegehinweise ",
+          "shortDescriptions": [
+            "für Designs aus weißer oder heller Baumwolle",
+            "für Designs aus dunkler oder farbintensiver Baumwolle",
+            "für Designs aus Baumwollmischgeweben, Mikrofaser und Viskosemischungen",
+            "für Designs aus Seide, mit Kaschmir- oder Wollanteil"
+          ],
+          "featured": true,
+          "descriptions": [
+            "Die Wahl des richtigen Waschmittels für die jeweilige Gewebeart ist ganz entscheidend.",
+             "Denn Waschmittel sind nicht alle gleich.", 
+             "Es gibt Weißmacher, Farbschützer, Wollspezialisten, etc.",
+             "Für jede Waschaufgabe gibt es die optimalen Wirkstoffe.", 
+             "Falsch eingesetzt schaden allerdings alle Waschmittel mehr als dass sie nützen.",
+             "Pulver, die strahlend weiß waschen, lassen zum Beispiel dunkle Hemden blass aussehen.", 
+           ],
+          "thumbnails": [
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_40deg.png",
+              "title": "40 Grad"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_60deg.png",
+              "title": "60 Grad"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_iron1.png",
+              "title": "Bügeln, Stufe 1"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_iron2.png",
+              "title": "Bügeln, Stufe 2"
+            },
+            {
+              "url": "https://www.muellermassmanufaktur.de/manufaktur/Pflegehinweise,3/images/icon_care_iron3.png",
+              "title": "Bügeln, Stufe 3"
+            },
+          ],
+        }
+      ]
+  }

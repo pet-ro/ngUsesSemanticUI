@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
 // 
 //      Home
 //      Home is a kind of main menu
-import { HomeComponent } from './component/home/home.component';
+// import { HomeComponent } from './component/home/home.component';
 // 
 //      Product page 
 import { ProductPageComponent } from './component/product-page/product-page.component';
@@ -36,6 +36,11 @@ import { SearchComponent } from './component/search/search.component';
 import { AdminPageComponent } from './module/admin/admin-page.component';
 // Admin Module 
 import { AdminModule } from './module/admin/admin.module';
+//  *****************************************************
+import { HomeComponent } from './component/home/home.component';
+import { FooterModule } from './alfa/module/footer/footer.module';
+import { AlfaHomeComponent } from './alfa/component/alfa-home/alfa-home.component';
+import { AlfaHomePresentationComponent } from './alfa/component/alfa-home-presentation/alfa-home-presentation.component';
 
 
 
@@ -50,6 +55,9 @@ import { AdminModule } from './module/admin/admin.module';
     ProductDetailsComponent,
     // app-related
     SearchComponent,
+    // **** alfa
+    AlfaHomeComponent,
+    AlfaHomePresentationComponent,
   ],
   imports: [
     BrowserModule, 
@@ -57,6 +65,8 @@ import { AdminModule } from './module/admin/admin.module';
     AppRoutingModule,
     // 
     AdminModule, 
+    // **** alfa 
+    FooterModule,
 
   ],
   providers: [

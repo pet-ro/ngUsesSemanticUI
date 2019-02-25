@@ -12,10 +12,63 @@
     <a routerLink="/product-page" routerLinkActive="active" class="item">Unsere Produkte</a>
     <a routerLink="/service-page" routerLinkActive="active" class="item">Unser Dienstleistungsangebot</a>
     <a routerLink="/about-us " routerLinkActive="active" class="item">Über uns </a>
-    <a routerLink="/admin" routerLinkActive="active" class="item">Administration</a>
+    <a routerLink="/admin" routerLinkActive="active" class="item"></a>
+</div>
+<div class="ui divider"></div>
+<div class="ui grid">
+  <div class="two wide column"></div>
+  <div class="nine wide column">
+      <div class="ui text container">
+          <h3 class="first">Text Container</h3>
+          <p>Sometimes you just need to put a single column of centered text on a page. A <code>text container</code> is a special type of container optimized for a single flowing column of text, like this instructions on this page.
+          </p>
+          <p>Text containers <b>do not need to use grids</b> and help simplify basic page layouts.</p>
+        </div>
+  </div>
+  <div class="five wide column">
+    
+      <div class="ui vertically divided grid">
+          <div class="row">
+            <div class="four wide column">
+              Featured Products
+              <div class="ui grid">
+                <div class="row"> 
+                    <div class="one wide column">Label</div>
+                </div>
+                <div class="row"> 
+                    <div class="one wide column">Product</div>
+                </div>
+                <div class="row"> 
+                    <div class="one wide column">Label</div>
+                </div>
+                <div class="row"> 
+                    <div class="one wide column">Product</div>
+                </div> 
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+              <div class="four wide column">
+                Featured Service
+              </div>
+            </div>
+            <div class="row">
+                <div class="four wide column">
+                  Featured News
+                </div>
+              </div> 
+        </div>
+  
+  </div>
 </div>
 
-
-
+<div class="ui five item tabs menu">
+    <a routerLink="/impressum"  routerLinkActive="active" class="item">Impressum</a>
+    <a routerLink="/about-us" routerLinkActive="active" class="item">Über uns</a>
+    <a class="item"></a>
+    <a routerLink="/admin" routerLinkActive="active" class="item">Administration</a>
+    <a class="item"></a>
+</div>
 
 <router-outlet></router-outlet>

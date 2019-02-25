@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  title = 'BookMonkey (alfatraining project) '
+  title = 'alfa (Produkte & Dienstleistung) '
 
   constructor() { }
 

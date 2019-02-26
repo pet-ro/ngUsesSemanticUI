@@ -37,10 +37,13 @@ import { AdminPageComponent } from './module/admin/admin-page.component';
 // Admin Module 
 import { AdminModule } from './module/admin/admin.module';
 //  *****************************************************
-import { HomeComponent } from './component/home/home.component';
-import { FooterModule } from './alfa/module/footer/footer.module';
+// import { HomeComponent } from './component/home/home.component';
+
 import { AlfaHomeComponent } from './alfa/component/alfa-home/alfa-home.component';
 import { AlfaHomePresentationComponent } from './alfa/component/alfa-home-presentation/alfa-home-presentation.component';
+import { FooterModule } from './alfa/module/footer/footer.module';
+import { ModelModule } from './alfa/model/model.module';
+import { BootstrapInfoComponent } from './alfa/component/bootstrap-info/bootstrap-info.component'
 
 
 
@@ -48,7 +51,7 @@ import { AlfaHomePresentationComponent } from './alfa/component/alfa-home-presen
   declarations: [
     AppComponent,
     // app-related
-    HomeComponent,
+//    HomeComponent,
     // app-related
     ProductPageComponent,
     ProductListComponent,
@@ -58,6 +61,7 @@ import { AlfaHomePresentationComponent } from './alfa/component/alfa-home-presen
     // **** alfa
     AlfaHomeComponent,
     AlfaHomePresentationComponent,
+    BootstrapInfoComponent,
   ],
   imports: [
     BrowserModule, 
@@ -67,7 +71,7 @@ import { AlfaHomePresentationComponent } from './alfa/component/alfa-home-presen
     AdminModule, 
     // **** alfa 
     FooterModule,
-
+    ModelModule,
   ],
   providers: [
     ProductProviderService

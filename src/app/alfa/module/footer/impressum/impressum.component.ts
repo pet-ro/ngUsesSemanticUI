@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'bm-impressum',
   templateUrl: './impressum.component.html',
-  styleUrls: ['./impressum.component.css']
+  encapsulation: ViewEncapsulation.None
 })
 export class ImpressumComponent implements OnInit {
 

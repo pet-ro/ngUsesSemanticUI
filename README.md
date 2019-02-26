@@ -41,7 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Infos at [json-server @ npm](https://www.npmjs.com/package/json-server)
 
-- npmgit  package 
+- npm get  package 
 
       npm install json-sever 
 

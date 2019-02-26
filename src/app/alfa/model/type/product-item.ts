@@ -8,10 +8,10 @@ export class ProductItem {
      public id: string,   
      public title: string,  
      public shortDescriptions: string[],
-     public inStock?: number,
+     public inStock?: string,
      public featured?: boolean,
-     public description?: string[],
-     public price?: number,
+     public descriptions?: string[],
+     public priceInEuro?: string,
      public thumbnails?: Thumbnail[],
   ) { }
 }

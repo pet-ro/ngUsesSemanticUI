@@ -1,0 +1,29 @@
+<p>
+  teams works!
+</p>
+
+<div class="ui five item tabs menu">
+  <a routerLink="/home" routerLinkActive="active" class="item">Home</a>
+  <a routerLink="/teams" routerLinkActive="active" class="item">Die Teams</a>
+  <a  class="item"></a>
+  <a  class="item"></a>
+  <a  class="item"></a>
+</div>
+ 
+  
+<div class="ui middle aligned selection divided list">
+  <a *ngFor="let team of teams" class="item">
+      <div class="header">{{ team.position }}</div>
+    <img class="ui tiny image"
+         *ngIf="team.thumbnails"
+         [src]="team.thumbnails[0].url">
+    <div class="content">
+      <div class="metadata" *ngFor="let member of team.members; last as isLast">
+          {{ member }} 
+          <span *ngIf="!isLast">, </span>
+          <span *ngIf="isLast">. </span>
+      </div>
+      <div class="description">{{ team.description }}</div>
+    </div>
+  </a>
+</div>

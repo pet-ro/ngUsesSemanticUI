@@ -1,3 +1,27 @@
+# Offene Punkte
+
+## Routing: Stoffdesigns auf Stoffdesign-Details
+
+- Effekt
+
+  Wird der Hyperlink eines Items aus der Liste aktiviert,
+  ergänzt das Menü den Tab `Details`, aber zeigt diesen 
+  Tab nicht als aktiviert an.
+
+   ==> ? activatedRoute wird nicht passend aktiviert
+
+   Der Manuelle Click auf den Tab `Details` zeigt 
+   den erwarteten Inhalt.
+
+   
+
+
+
+
+
+  
+
+
 # Project
 
 

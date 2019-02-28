@@ -37,18 +37,17 @@ export class ProductItemFactory {
                 );
       }
   
-      static fromObject( rawProduct: any): ProductItem  {
+    static fromObject( raw: any): ProductItem  {
         // Here we just forward the `rawProduct`
-        return new ProductItem (
-            rawProduct.id,
-            rawProduct.title,
-            rawProduct.shortDescriptions,
-            rawProduct.inStock,
-            rawProduct.featured,
-            rawProduct.descriptions,
-            rawProduct.priceInEuro,
-            rawProduct.tumbnails,
-
-        )
+        return   new ProductItem  (
+          raw.id,  // id,
+          raw.title,  // title,
+          raw.shortDescriptions, // shortDescriptions, 
+          raw.inStock ,// inStock
+          raw.featured,// featured 
+          raw.descriptions,// descriptions 
+          raw.priceInEuro, // priceInEuro
+          raw.thumbnails , // tumbnails
+     );
       }
 }

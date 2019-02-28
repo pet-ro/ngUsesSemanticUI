@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core'; 
 import { ActivatedRoute } from '@angular/router'; 
- import { BootstrapInfoComponent } from '../bootstrap-info/bootstrap-info.component'
 
 @Component({
   selector: 'bm-alfa-home',

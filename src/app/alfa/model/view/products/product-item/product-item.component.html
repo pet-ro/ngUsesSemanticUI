@@ -1,0 +1,16 @@
+<img class="ui tiny image"
+*ngIf="product.thumbnails"
+[src]="product.thumbnails[0].url">
+<div class="content">
+<div class="header">{{ product.title }} </div>
+<div class="description"
+  *ngFor="let shortdescription of product.shortDescriptions; index as i">
+  {{ product.shortDescriptions[i]}}
+</div>
+<div class="extra">Verfügbar in {{ product.inStock }} Wochen, nach Bestellung.</div>
+<div class="metadata">
+  {{ product.priceInEuro }} €
+</div>
+<div class="extra">{{ product.key }}</div>
+</div>
+

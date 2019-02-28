@@ -1,0 +1,50 @@
+<div class="ui three item tabs menu">
+  <a routerLink="/home" routerLinkActive="active" class="item">Home</a>
+  <a routerLink="/designs" routerLinkActive="active" class="item">Stoffdesign Liste</a>
+  <a routerLink="/designs/:id" routerLinkActive="active" class="item">Details</a>
+</div>
+
+<div class="ui grid" *ngIf="product">
+  <div class="four wide column">
+    <img class="ui large image" [src]="product?.thumbnails && product?.thumbnails[0].url">
+  </div>
+  <div class="twelve wide column">
+    <h1 class="ui header">{{ product?.title }}</h1>
+    <h3 class="description"
+      *ngFor="let shortdescription of product.shortDescriptions; index as i">
+      {{ product.shortDescriptions[i]}}
+    </h3>
+    <h3 class="ui header">{{ product?.priceInEuro }} € </h3>
+    <div class="ui divider"></div>
+    <div class="ui grid">
+      <div class="four wide column">
+        <h4 class="ui header">ID</h4>
+        {{ product?.id }}
+      </div>
+      <div class="four wide column">
+        <h4 class="ui header">Featured</h4>
+        {{ product?.featured }}
+      </div>
+    </div>
+  </div>
+  <div class="sixteen wide column">
+    <h3 class="ui header">Beschreibung</h3>
+        <p *ngFor="let description of product?.descriptions; index as i">
+          {{ product?.descriptions[i] }}
+        </p>
+  </div>
+  <div class="sixteen wide column">
+    <div class="ui small images">
+      <img *ngFor="let thumbnail of product?.thumbnails" [src]="thumbnail.url">
+    </div>
+  </div>
+</div>
+
+<button class="ui tiny red labeled icon button"
+        (click)="removeProduct()">
+  <i class="remove icon"></i> Design löschen
+</button>
+<a class="ui tiny yellow labeled icon button"
+   [routerLink]="['admin-designs', product?.id]">
+  <i class="write icon"></i> Design bearbeiten
+</a>

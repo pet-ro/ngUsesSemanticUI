@@ -1,0 +1,65 @@
+
+<div class="ui three item tabs menu">
+    <a routerLink="/home" routerLinkActive="active" class="item">Home</a>
+    <a routerLink="/admin-designs" routerLinkActive="active" class="item">Eingabemaske: Designs </a>
+    <a routerLink="/admin-services" routerLinkActive="active" class="item">Eingabemaske: Services</a>
+</div>
+
+
+<div class="ui main container">
+  <div class="sixteen wide column">
+    <h1>Eingabemaske: Designs</h1>
+    <!-- The Form -->
+    <form class="ui large form" 
+          #myForm="ngForm" (ngSubmit)="submitForm()">
+        <div class="field">
+            <label>id</label>
+            <input name="id" 
+                  [(ngModel)]="product.id" required minlength="5" maxlength="12">
+            <div *ngIf="errors.id" class="ui negative message">{{errors.id}}</div>
+        </div>
+      <div class="field">
+        <label>Designtitel</label>
+        <input name="title" [(ngModel)]="product.title" required>
+        <div *ngIf="errors.title" class="ui negative message">{{errors.title}}</div>
+      </div>
+      <div class="field">
+          <label>Kurzbeschreibungen</label>
+          <input name="shortDescriptions" [(ngModel)]="product.shortDescriptions[0]" required>
+          <div *ngIf="errors.shortDescriptions" class="ui negative message">{{errors.shortDescriptions}}</div>
+        </div>
+      <div class="field">
+        <label>Verfügbarkeit (in Wochen) </label>
+        <input name="inStock" [(ngModel)]="product.inStock" pattern="'\d'">
+      </div>
+ 
+
+      <div class="field">
+        <label>Featured</label>
+        <input type="boolean" name="featured" [(ngModel)]="product.featured"  >
+        <div *ngIf="errors.featured" class="ui negative message">{{errors.featured}}</div>
+      </div>
+      <div class="field">
+          <label>Beschreibungen</label>
+          <textarea name="descriptions" [(ngModel)]="product.descriptions[0]" rows="3" required ></textarea>
+          <div *ngIf="errors.descriptions" class="ui negative message">{{errors.descriptions}}</div>
+        </div>
+      <div class="field">
+        <label>Preis in Euro </label>
+        <input name="priceInEuro" [(ngModel)]="product.priceInEuro" required>
+      </div>
+      <div class="field">
+        <label>Bild</label>
+        <div class="two fields" ngModelGroup="thumbnail">
+          <div class="field">
+            <input name="url" [(ngModel)]="product.thumbnails[0].url" placeholder="http://example.org/img.jpg">
+          </div>
+          <div class="field">
+            <input name="title" [(ngModel)]="product.thumbnails[0].title" placeholder="Titel">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="ui red button" [disabled]="myForm.invalid">Speichern</button>
+    </form>
+  </div>
+</div>

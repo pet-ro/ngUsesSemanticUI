@@ -1,0 +1,20 @@
+<div class="ui checkbox">
+  <input type="checkbox" 
+         name="example"
+         [checked]="checked"
+         (change)="emitCheckedEvent($event.target.checked)"
+  >
+  <label>{{label}}</label>
+</div>
+
+
+<!--
+
+  Usage: Example
+
+  <bm-checkbox
+       [isChecked]="item.featured"
+       (checkedEmitter)="item.featured = $event" >
+  </bm-checkbox>
+
+-->

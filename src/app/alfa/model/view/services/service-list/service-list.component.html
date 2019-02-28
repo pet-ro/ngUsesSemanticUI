@@ -1,0 +1,29 @@
+<div class="ui three item tabs menu">
+  <a routerLink="/home" routerLinkActive="active" class="item">Home</a>
+  <a routerLink="/services" routerLinkActive="active" class="item">Service Liste</a>
+</div>
+
+  <div class="ui middle aligned selection divided list">
+    <a *ngFor="let service of services" 
+       class="item"
+       [routerLink]="['/services/', service.id]"
+       routerLinkActive="active">
+        <div class="header">{{ service.title}}</div>
+      <img class="ui tiny image"
+           *ngIf="service.thumbnails"
+           [src]="service.thumbnails[0].url">
+      <div class="content">
+        <div class="metadata" 
+             *ngFor="let shortDescription of service.shortDescriptions; last as isLast">
+            {{ shortDescription }} 
+            <span *ngIf="!isLast">, </span>
+            <span *ngIf="isLast">. </span>
+        </div>
+        <div class="description"
+             *ngFor="let description of service.descriptions; last as isLast">
+            {{ description }}
+         </div>
+      </div>
+    </a>
+  </div>
+  <router-outlet></router-outlet>

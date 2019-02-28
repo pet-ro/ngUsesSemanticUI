@@ -1,0 +1,20 @@
+<div class="ui three item tabs menu">
+    <a routerLink="/home" routerLinkActive="active" class="item">Home</a>
+    <a routerLink="/designs" routerLinkActive="active" class="item">Stoffdesign Liste</a>
+</div>
+
+  <div class="ui middle aligned selection divided list">
+      <a  class="alfa-product-item item"
+          *ngFor="let product of products"
+          [product]="product"
+          routerLink="product.id"
+          routerLinkActive="active"
+          (click)="changeTheRouter(product.id)">
+      </a>
+    
+  <div *ngIf="!products" class="ui active dimmer">
+    <div class="ui large text loader">Daten werden geladen...</div>
+  </div>
+  <p *ngIf="books && !books.length">Es wurden noch keine Einträge gefunden.</p>
+  </div>
+  <router-outlet></router-outlet>

@@ -19,7 +19,11 @@ the jQuery scripts - no JQuery required in _Angular_ projects with _Semantic UI_
         at https://edcarroll.github.io
         </cite>
     </footer>
-    
+
 </blockquote>
 
+
+# About [Semantic UI Fixed Template](https://semantic-ui.com/examples/fixed.html)
+
+view-source:https://semantic-ui.com/examples/fixed.html
 
